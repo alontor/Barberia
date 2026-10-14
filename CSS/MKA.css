@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+  background-color: rgb(28, 28, 28);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  min-height: 100dvh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+header h1 {
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+header img {
+  margin-top: 5px;
+  margin-left: 13px;
+  height: 80px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+nav #menu-toggle {
+  display: none;
+}
+
+nav #menu-toggle:checked + .menu {
+  transform: translateX(0);
+}
+
+nav .ico-menu {
+  height: 32px;
+  margin-right: 20px;
+}
+
+nav .ico-menu-close {
+  height: 32px;
+}
+
+nav .menu {
+  display: flex;
+  padding: 13px;
+  flex-direction: column;
+  align-items: end;
+  background-color: rgb(60, 60, 60);
+  width: 60vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  transform: translateX(200%);
+  transition: all 0.5s ease;
+  z-index: 9999;
+}
+
+nav .menu .logo-menu{
+    height: 150px;
+    align-self: center;
+    filter:drop-shadow(0px 0px 15px rgb(0, 0, 0))
+}
+
+nav .menu ul{
+    display: flex;    
+    flex-direction: column;
+    width: 100%;
+}
+
+nav .menu li{
+    width: 100%;
+}
+
+nav .menu li a{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    color: white;
+    padding: 15px;
+    display: block;
+}
+
+nav .menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.311);
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.644);
+  transition: all 0.5s ease;
+}
+
+hr{
+    border: solid gold 1px;
+}
+
+.banner {
+  background-color: rgba(0, 0, 0, 0.584);
+  border: solid black 1px;
+  height: 300px;
+  margin-top: 20px;
+  background-image: url(/Images/shome_perfecc._corte_masculino_con_visagismo_barberia.jpg);
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.servicios{
+    padding: 20px;
+}
+
+.servicios h2{
+    text-align: center;
+    color: white;    
+}
+
+.servicios .cont-servicios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.servicios .card-servicio{
+    width: 200px;
+    background-color: white;
+    height: 235px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.386);
+}
+
+.servicios .card-servicio h3{
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    background-color: rgb(218, 187, 15);
+}
+
+.servicios .card-servicio .card-cuerpo {
+    height: 200px;
+    width: 200px;
+}
+
+.servicios .card-servicio img{
+    height: 200px;
+    width:  200px;
+}
+
+.servicios .card-servicio p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    transform: translateY(-204px);
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.372);
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .parrafos{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .parrafos .info-section {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer .parrafos .info-section:last-child {
+    margin-bottom: 20px;
+}
+
+footer .parrafos .info-section h4{
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+footer .parrafos .social-icons a {
+    margin-right: 15px;
+}
+
+footer .parrafos .social-icons a:last-child{
+    margin-right: 0;
+}
+
+footer .mapa img {
+    width: 100%;
+}
+
+footer .derechos {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+}
+
+@media (min-width: 600px) {
+    nav {
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    nav .label-ico, 
+    nav .logo-menu {
+        display: none;
+    }
+
+    nav .menu {
+        width: 100%;
+        transform: translateX(0);
+        position: relative;
+        width: 600px;
+        height: 100%;
+        background-color: transparent;
+    }
+
+    nav .menu ul {
+        flex-direction: row;
+        margin-right: 125px;
+    }
+
+    .servicios {
+        margin-bottom: 30px;
+    }
+
+    .servicios h2 {
+        margin-top: 30px;
+    }
+
+    .servicios .cont-servicios {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .servicios .cont-servicios .card-servicio {
+        margin: 20px;
+    }
+
+    footer {
+        padding-bottom: 0;
+    }
+
+    footer .info-section {
+        margin-right: 50px;        
+    }
+
+    footer .info-section:last-child {
+        margin-right: 0;
+    }
+
+    footer .info .parrafos {
+        flex-direction: row;
+        margin-right: 50px;
+        font-size: 12px;
+    }
+
+    footer .social-icons {
+        display: flex;
+    }
+
+    footer .social-icons img {
+        height: 24px;
+    }
+    
+    footer .derechos {
+        display: flex;       
+        align-items: center;
+        justify-content: center;
+        height: 80px;
+    }
+}
+
+@media (min-width: 900px) {
+    footer .info {
+        display: flex;
+        flex-direction: row;
+    }
+}
+

@@ -1,0 +1,155 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+ background-color: rgb(28, 28, 28);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+hr{
+    border: solid gold 1px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
+}
+
+header h1 {
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+header img {
+  margin-top: 5px;
+  margin-left: 13px;
+  height: 80px;
+}
+
+nav{
+    background-color: rgb(28, 28, 28);;
+    padding: 30px;
+    display: flex;
+    justify-content: end;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav li{
+    margin-right: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav li a:hover{
+background-color: rgba(255, 255, 255, 0.311);
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 0.644);
+  transition: all 0.5s ease;
+  padding: 20px;
+}
+
+.titulo{
+    text-align: start;
+    margin-left: 100px;
+    color: white; 
+}
+
+.productos{
+    padding: 20px;
+}
+
+.productos .catalogo{
+    text-align: center;
+    color: white;    
+}
+
+.productos .articulos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.productos .card-catalogo{
+    width: 200px;
+    background-color: white;
+    height: 235px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.386);
+    margin-left: 60px;
+}
+
+.productos .card-catalogo h3{
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    height: 35px;
+    background-color: rgb(218, 187, 15);
+}
+
+.productos .card-catalogo .card-cuerpo {
+    height: 200px;
+    width: 200px;
+}
+
+.productos .card-catalogo img{
+    height: 200px;
+    width:  200px;
+}
+
+.productos .card-catalogo p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    transform: translateY(-204px);
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.372);
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .derechos {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+    width: 100%;
+}
+
+.regresar{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}

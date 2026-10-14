@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(28, 28, 28);;
+}
+
+hr{
+    border: solid gold 1px;
+}
+
+header {
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.584);
+  border: solid black 1px;
+  margin-top: 20px;
+  background-image: url(/Images/banner.jpg);
+  background-position: top;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+header h1{
+  text-align: center;
+  font-size: 60px;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+
+nav{
+    background-color: rgb(28, 28, 28);;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav li{
+    margin-right: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+section{
+    justify-content: center;
+}
+
+section h2{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+section p{
+    text-align: center;
+    padding: 0 40px 0 40px;
+    color: white;
+    width: 500px;
+    margin-left: 380px;
+    margin-bottom: 40px;
+}
+
+.img-obj{
+    height: 300px;
+    width: 500px;
+    margin-left: 380px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer .derechos {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.regresar{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
